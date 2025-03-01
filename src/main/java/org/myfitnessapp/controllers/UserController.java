@@ -23,7 +23,6 @@ public class UserController {
         return ResponseEntity.ok(result);
     }
 
-
     @GetMapping
     public ResponseEntity<List<User>> getAllUsers() {
         List<User> result = userDao.getAllUsers();
